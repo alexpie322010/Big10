@@ -5,54 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Big 10 Football</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-      color: #000;
-    }
-    header {
-      background-color: #000;
-      color: #fff;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 30px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    nav a {
-      color: #87cefa;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: bold;
-    }
-    .content {
-      padding: 20px;
-      text-align: center;
-    }
-    .articles {
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: left;
-    }
-    .article-preview {
-      background: #fff;
-      margin-bottom: 20px;
-      padding: 15px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .article-preview h3 {
-      margin: 0;
-    }
-    .article-preview p {
-      margin-top: 5px;
-      color: #333;
-    }
+    body { margin: 0; font-family: Arial, sans-serif; background: #f8f9fa; color: #000; }
+    header { background: #000; color: #fff; display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; }
+    header h1 { margin: 0; font-size: 2rem; }
+    nav a { color: #87cefa; text-decoration: none; margin-left: 20px; font-weight: bold; }
+    .content { padding: 20px; text-align: center; }
+    .articles { max-width: 900px; margin: 20px auto; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .article-preview { background: #fff; border: 1px solid #ddd; border-radius: 5px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1); text-align: left; }
+    .article-preview img { width: 100%; height: 180px; object-fit: cover; }
+    .article-preview .text { padding: 15px; }
+    .article-preview h3 { margin: 0; font-size: 1.1rem; }
+    .article-preview p { margin: 8px 0 0; font-size: 0.9rem; color: #333; }
   </style>
 </head>
 <body>
@@ -70,12 +33,18 @@
 
     <div class="articles">
       <div class="article-preview">
-        <h3><a href="1.html">Article 1 Title</a></h3>
-        <p>Short preview of article 1 content...</p>
+        <img src="https://via.placeholder.com/400x180" alt="Penn State vs Iowa">
+        <div class="text">
+          <h3><a href="1.html">Penn State vs Iowa - What You Need to Know</a></h3>
+          <p>Pregame hype, injury updates, and chances for PSU heading into Kinnick Stadium...</p>
+        </div>
       </div>
       <div class="article-preview">
-        <h3><a href="2.html">Article 2 Title</a></h3>
-        <p>Short preview of article 2 content...</p>
+        <img src="https://via.placeholder.com/400x180" alt="Ohio State Update">
+        <div class="text">
+          <h3><a href="2.html">Ohio State Midseason Report</a></h3>
+          <p>How the Buckeyes are shaping up midseason and what fans should watch for...</p>
+        </div>
       </div>
     </div>
   </div>
