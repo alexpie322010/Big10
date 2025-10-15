@@ -3,86 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Big Ten Football Hub</title>
+  <title>Big Ten Football</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f9fbfd;
-      color: #000;
+    body { margin:0; font-family:Arial,sans-serif; background:#f9fbfd; color:#000; }
+    header { background:#00274c; color:#fff; padding:20px; text-align:center; }
+    header h1 { margin:0; font-size:2rem; }
+
+    .content { max-width:1000px; margin:20px auto; background:#fff; padding:20px;
+      border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+    h2 { color:#00274c; margin-top:0; }
+
+    table { width:100%; border-collapse:collapse; margin:20px 0; }
+    th,td { padding:10px; border-bottom:1px solid #ccc; text-align:left; }
+    th { background:#00274c; color:#fff; }
+
+    .articles { margin:30px 0; }
+    .article-card {
+      border:1px solid #ddd; border-radius:5px; padding:15px; margin-bottom:15px;
+      background:#fdfdfd; box-shadow:0 2px 5px rgba(0,0,0,0.05);
     }
-    header {
-      background-color: #00274c;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 { margin: 0; font-size: 2rem; }
-    .container {
-      display: grid;
-      grid-template-columns: 3fr 1fr;
-      gap: 20px;
-      padding: 20px;
-    }
-    .main-article, .article-card {
-      background: #fff;
-      padding: 20px;
-      border-radius: 6px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .main-article img, .article-card img { width: 100%; border-radius: 6px; margin-bottom: 15px; }
-    .article-list { display: grid; gap: 15px; margin-top: 20px; }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #e9ecef;
-      margin-top: 20px;
-    }
-    .ad { margin: 20px 0; text-align: center; }
+    .article-card h3 { margin-top:0; }
+    .article-card a { text-decoration:none; color:#00274c; font-weight:bold; }
+
+    ul { padding-left:20px; }
+
+    .ad { margin:30px 0; text-align:center; }
   </style>
 </head>
 <body>
   <header>
     <h1>Big Ten Football Hub</h1>
-    <nav>
-      <a href="index.html" style="color:white; margin:0 10px;">Home</a>
-      <a href="B1G.html" style="color:white; margin:0 10px;">Standings</a>
-    </nav>
+    <p>Standings, Schedules, and News</p>
   </header>
 
-  <div class="container">
-    <div>
-      <div class="main-article">
-        <img src="data:image/jpeg;base64,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" alt="Penn State vs Iowa">
-        <h2><a href="1.html">Penn State vs Iowa - Pregame Breakdown</a></h2>
-        <p><em>Published: October 15, 2025</em></p>
-        <p>Penn State heads to Iowa in one of the most anticipated clashes of the Big Ten season. Here’s the breakdown, betting odds, and fan predictions...</p>
-      </div>
+  <div class="content">
+    <h2>About the Big Ten</h2>
+    <p>
+      The Big Ten Conference is one of the oldest and most competitive college football leagues in the United States. 
+      Known for its passionate fan bases, historic rivalries, and powerhouse programs, the Big Ten features 
+      some of the toughest competition in the country. With recent expansion, the conference now includes schools 
+      from coast to coast, but the tradition of hard-nosed football and packed stadiums remains the same.
+    </p>
 
-      <div class="article-list">
-        <div class="article-card">
-          <img src="https://via.placeholder.com/400x200" alt="Placeholder">
-          <h3>Coming soon...</h3>
-        </div>
-        <div class="article-card">
-          <img src="https://via.placeholder.com/400x200" alt="Placeholder">
-          <h3>Coming soon...</h3>
-        </div>
+    <div class="ad">
+      <script type="text/javascript">
+        atOptions = { 'key' : 'adf45ada22d767c4fe17da98e6ba9185',
+                      'format' : 'iframe', 'height' : 600, 'width' : 160, 'params' : {} };
+      </script>
+      <script type="text/javascript" src="//www.highperformanceformat.com/adf45ada22d767c4fe17da98e6ba9185/invoke.js"></script>
+    </div>
+
+    <h2>Articles</h2>
+    <div class="articles">
+      <div class="article-card">
+        <h3><a href="1.html">Penn State vs Iowa: What You Need to Know</a></h3>
+        <p>A pregame breakdown of Penn State’s matchup against Iowa on October 18th, including betting odds, QB analysis, and what fans are saying.</p>
+      </div>
+      <div class="article-card">
+        <h3><a href="2.html">Coming Soon</a></h3>
+        <p>Stay tuned for more Big Ten coverage.</p>
+      </div>
+      <div class="article-card">
+        <h3><a href="3.html">Coming Soon</a></h3>
+        <p>More articles will be added soon.</p>
       </div>
     </div>
 
-    <aside>
-      <div class="ad">
-        <script type="text/javascript">
-          atOptions = { 'key' : 'adf45ada22d767c4fe17da98e6ba9185', 'format' : 'iframe', 'height' : 600, 'width' : 160, 'params' : {} };
-        </script>
-        <script type="text/javascript" src="//www.highperformanceformat.com/adf45ada22d767c4fe17da98e6ba9185/invoke.js"></script>
-      </div>
-    </aside>
+    <h2>Current Standings</h2>
+    <table>
+      <tr><th>Team</th><th>Conf</th><th>Overall</th><th>Streak</th></tr>
+      <tr><td>Indiana</td><td>3-0</td><td>6-0</td><td>W6</td></tr>
+      <tr><td>Ohio State</td><td>3-0</td><td>6-0</td><td>W6</td></tr>
+      <tr><td>USC</td><td>3-1</td><td>5-1</td><td>W1</td></tr>
+      <tr><td>Oregon</td><td>2-1</td><td>5-1</td><td>L1</td></tr>
+      <tr><td>Michigan</td><td>2-1</td><td>4-2</td><td>L1</td></tr>
+      <tr><td>Northwestern</td><td>2-1</td><td>4-2</td><td>W3</td></tr>
+      <tr><td>Nebraska</td><td>2-1</td><td>5-1</td><td>W2</td></tr>
+      <tr><td>Washington</td><td>2-1</td><td>5-1</td><td>W2</td></tr>
+      <tr><td>Iowa</td><td>2-1</td><td>4-2</td><td>W1</td></tr>
+      <tr><td>Minnesota</td><td>2-1</td><td>4-2</td><td>W1</td></tr>
+      <tr><td>UCLA</td><td>2-1</td><td>2-4</td><td>W2</td></tr>
+      <tr><td>Illinois</td><td>2-2</td><td>5-2</td><td>L1</td></tr>
+      <tr><td>Maryland</td><td>1-2</td><td>4-2</td><td>L2</td></tr>
+      <tr><td>MSU</td><td>0-3</td><td>3-3</td><td>L3</td></tr>
+      <tr><td>Penn State</td><td>0-3</td><td>3-3</td><td>L3</td></tr>
+      <tr><td>Rutgers</td><td>0-3</td><td>3-3</td><td>L3</td></tr>
+      <tr><td>Purdue</td><td>0-3</td><td>2-4</td><td>L4</td></tr>
+      <tr><td>Wisconsin</td><td>0-3</td><td>2-4</td><td>L4</td></tr>
+    </table>
+
+    <h2>Upcoming Games – October 18th</h2>
+    <ul>
+      <li>Ohio State at Wisconsin — 12:30 PM ET on Peacock</li>
+      <li>Penn State at Iowa — 4:00 PM ET on Peacock</li>
+      <li>Oregon at Rutgers — 3:30 PM ET on BTN</li>
+      <li>Maryland at UCLA — 4:00 PM ET on FS1</li>
+      <li>Michigan at Washington — 9:00 AM ET on FOX</li>
+      <li>Michigan State at Indiana — 12:30 PM ET on Peacock</li>
+    </ul>
   </div>
 
-  <footer>
-    <p>&copy; 2025 Big Ten Football Hub</p>
-  </footer>
+  <div class="ad">
+    <script type="text/javascript">
+      atOptions = { 'key' : 'adf45ada22d767c4fe17da98e6ba9185',
+                    'format' : 'iframe', 'height' : 600, 'width' : 160, 'params' : {} };
+    </script>
+    <script type="text/javascript" src="//www.highperformanceformat.com/adf45ada22d767c4fe17da98e6ba9185/invoke.js"></script>
+  </div>
 </body>
 </html>
+
