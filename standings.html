@@ -3,86 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Big Ten Standings – In Depth</title>
+  <title>Standings - Big Ten Football</title>
   <style>
-    body { margin:0; font-family:Arial,sans-serif; background:#f9fbfd; color:#000; }
-    header { background:#00274c; color:#fff; padding:20px; text-align:center; }
-    header h1 { margin:0; font-size:2rem; }
-    .content {
-      max-width:1000px;
-      margin:20px auto;
-      background:#fff;
-      padding:20px;
-      border-radius:6px;
-      box-shadow:0 2px 8px rgba(0,0,0,0.1);
-    }
-    h2 { color:#00274c; margin-top:0; }
-    table { width:100%; border-collapse:collapse; margin:20px 0; }
-    th,td { padding:10px; border-bottom:1px solid #ccc; text-align:center; font-size:0.95rem; }
-    th { background:#00274c; color:#fff; }
-    tr:nth-child(even) { background:#f2f7fc; }
-    .ad { margin:30px 0; text-align:center; }
+    body { margin:0; font-family:Arial, sans-serif; background:#f8f9fa; }
+    header { background:#003366; color:#fff; padding:20px; text-align:center; }
+    .container { display:flex; margin:20px; }
+    .main { flex:3; margin-right:20px; }
+    .ads { flex:1; }
+    .card { background:#fff; padding:20px; border-radius:6px; margin-bottom:20px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+    table { width:100%; border-collapse:collapse; }
+    th, td { padding:8px; border-bottom:1px solid #ddd; text-align:left; }
+    th { background:#e9ecef; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Big Ten Standings</h1>
-    <p>Full Conference Breakdown</p>
+    <h1>Big Ten Football Standings</h1>
   </header>
 
-  <div class="content">
-    <h2>Conference Standings (Detailed)</h2>
-    <table>
-      <tr>
-        <th>Team</th>
-        <th>Conference Record</th>
-        <th>Overall Record</th>
-        <th>Home</th>
-        <th>Away</th>
-        <th>Streak</th>
-        <th>Last Game</th>
-      </tr>
-      <tr><td>Indiana</td><td>3-0</td><td>6-0</td><td>4-0</td><td>2-0</td><td>W6</td><td>Win vs Maryland</td></tr>
-      <tr><td>Ohio State</td><td>3-0</td><td>6-0</td><td>4-0</td><td>2-0</td><td>W6</td><td>Win vs Rutgers</td></tr>
-      <tr><td>USC</td><td>3-1</td><td>5-1</td><td>4-0</td><td>1-1</td><td>W1</td><td>Win vs UCLA</td></tr>
-      <tr><td>Oregon</td><td>2-1</td><td>5-1</td><td>3-1</td><td>2-0</td><td>L1</td><td>Loss vs Washington</td></tr>
-      <tr><td>Michigan</td><td>2-1</td><td>4-2</td><td>3-0</td><td>1-2</td><td>L1</td><td>Loss vs Penn State</td></tr>
-      <tr><td>Northwestern</td><td>2-1</td><td>4-2</td><td>3-1</td><td>1-1</td><td>W3</td><td>Win vs Minnesota</td></tr>
-      <tr><td>Nebraska</td><td>2-1</td><td>5-1</td><td>3-1</td><td>1-0</td><td>W2</td><td>Win vs Purdue</td></tr>
-      <tr><td>Washington</td><td>2-1</td><td>5-1</td><td>3-1</td><td>2-0</td><td>W2</td><td>Win vs Oregon</td></tr>
-      <tr><td>Iowa</td><td>2-1</td><td>4-2</td><td>2-1</td><td>2-1</td><td>W1</td><td>Win vs Wisconsin</td></tr>
-      <tr><td>Minnesota</td><td>2-1</td><td>4-2</td><td>4-0</td><td>0-2</td><td>W1</td><td>Win vs Illinois</td></tr>
-      <tr><td>UCLA</td><td>2-1</td><td>2-4</td><td>1-2</td><td>1-2</td><td>W2</td><td>Win vs Rutgers</td></tr>
-      <tr><td>Illinois</td><td>2-2</td><td>5-2</td><td>3-1</td><td>2-1</td><td>L1</td><td>Loss vs Minnesota</td></tr>
-      <tr><td>Maryland</td><td>1-2</td><td>4-2</td><td>3-2</td><td>1-0</td><td>L2</td><td>Loss vs Indiana</td></tr>
-      <tr><td>Michigan State</td><td>0-3</td><td>3-3</td><td>3-1</td><td>0-2</td><td>L3</td><td>Loss vs Ohio State</td></tr>
-      <tr><td>Penn State</td><td>0-3</td><td>3-3</td><td>3-2</td><td>0-1</td><td>L3</td><td>Loss vs Michigan</td></tr>
-      <tr><td>Rutgers</td><td>0-3</td><td>3-3</td><td>3-1</td><td>0-2</td><td>L3</td><td>Loss vs USC</td></tr>
-      <tr><td>Purdue</td><td>0-3</td><td>2-4</td><td>2-2</td><td>0-2</td><td>L4</td><td>Loss vs Nebraska</td></tr>
-      <tr><td>Wisconsin</td><td>0-3</td><td>2-4</td><td>2-2</td><td>0-2</td><td>L4</td><td>Loss vs Iowa</td></tr>
-    </table>
+  <div class="container">
+    <div class="main">
+      <div class="card">
+        <h2>Conference Standings</h2>
+        <table>
+          <tr><th>Team</th><th>Conf</th><th>Overall</th><th>Home</th><th>Away</th><th>Streak</th></tr>
+          <tr><td>Indiana</td><td>3-0</td><td>6-0</td><td>4-0</td><td>2-0</td><td>W6</td></tr>
+          <tr><td>Ohio State</td><td>3-0</td><td>6-0</td><td>4-0</td><td>2-0</td><td>W6</td></tr>
+          <tr><td>USC</td><td>3-1</td><td>5-1</td><td>4-0</td><td>1-1</td><td>W1</td></tr>
+          <tr><td>Oregon</td><td>2-1</td><td>5-1</td><td>3-1</td><td>2-0</td><td>L1</td></tr>
+          <tr><td>Michigan</td><td>2-1</td><td>4-2</td><td>3-0</td><td>1-2</td><td>L1</td></tr>
+          <tr><td>Northwestern</td><td>2-1</td><td>4-2</td><td>3-1</td><td>1-1</td><td>W3</td></tr>
+          <tr><td>Nebraska</td><td>2-1</td><td>5-1</td><td>3-1</td><td>1-0</td><td>W2</td></tr>
+          <tr><td>Washington</td><td>2-1</td><td>5-1</td><td>3-1</td><td>2-0</td><td>W2</td></tr>
+          <tr><td>Iowa</td><td>2-1</td><td>4-2</td><td>2-1</td><td>2-1</td><td>W1</td></tr>
+          <tr><td>Minnesota</td><td>2-1</td><td>4-2</td><td>4-0</td><td>0-2</td><td>W1</td></tr>
+          <tr><td>UCLA</td><td>2-1</td><td>2-4</td><td>1-2</td><td>1-2</td><td>W2</td></tr>
+          <tr><td>Illinois</td><td>2-2</td><td>5-2</td><td>3-1</td><td>2-1</td><td>L1</td></tr>
+          <tr><td>Maryland</td><td>1-2</td><td>4-2</td><td>3-2</td><td>1-0</td><td>L2</td></tr>
+          <tr><td>Michigan State</td><td>0-3</td><td>3-3</td><td>3-1</td><td>0-2</td><td>L3</td></tr>
+          <tr><td>Penn State</td><td>0-3</td><td>3-3</td><td>3-2</td><td>0-1</td><td>L3</td></tr>
+          <tr><td>Rutgers</td><td>0-3</td><td>3-3</td><td>3-1</td><td>0-2</td><td>L3</td></tr>
+          <tr><td>Purdue</td><td>0-3</td><td>2-4</td><td>2-2</td><td>0-2</td><td>L4</td></tr>
+          <tr><td>Wisconsin</td><td>0-3</td><td>2-4</td><td>2-2</td><td>0-2</td><td>L4</td></tr>
+        </table>
+      </div>
 
-    <div class="ad">
+      <div class="card">
+        <h2>Upcoming Games (Oct 18)</h2>
+        <ul>
+          <li>Ohio State at Wisconsin — 12:30 PM ET (Peacock)</li>
+          <li>Penn State at Iowa — 4:00 PM ET (Peacock)</li>
+          <li>Oregon at Rutgers — 3:30 PM ET (BTN)</li>
+          <li>Maryland at UCLA — 4:00 PM ET (FS1)</li>
+          <li>Michigan at Washington — 9:00 AM ET (FOX)</li>
+          <li>Michigan State at Indiana — 12:30 PM ET (Peacock)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ads">
       <script type="text/javascript">
-        atOptions = { 'key' : 'adf45ada22d767c4fe17da98e6ba9185',
-                      'format' : 'iframe', 'height' : 600, 'width' : 160, 'params' : {} };
+        atOptions = {
+          'key' : 'adf45ada22d767c4fe17da98e6ba9185',
+          'format' : 'iframe',
+          'height' : 600,
+          'width' : 160,
+          'params' : {}
+        };
       </script>
       <script type="text/javascript" src="//www.highperformanceformat.com/adf45ada22d767c4fe17da98e6ba9185/invoke.js"></script>
     </div>
-
-    <h2>Notes</h2>
-    <p>
-      This expanded table includes not only conference and overall records, but also home/away splits,
-      streaks, and the result of each team’s most recent game. Check back weekly for updates as the season progresses.
-    </p>
-  </div>
-
-  <div class="ad">
-    <script type="text/javascript">
-      atOptions = { 'key' : 'adf45ada22d767c4fe17da98e6ba9185',
-                    'format' : 'iframe', 'height' : 600, 'width' : 160, 'params' : {} };
-    </script>
-    <script type="text/javascript" src="//www.highperformanceformat.com/adf45ada22d767c4fe17da98e6ba9185/invoke.js"></script>
   </div>
 </body>
 </html>
