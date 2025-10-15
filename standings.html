@@ -3,56 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>B1G Standings</title>
+  <title>Big Ten Standings – In Depth</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #f8f9fa; color: #000; }
-    header { background: #000; color: #fff; display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; }
-    nav a { color: #87cefa; text-decoration: none; margin-left: 20px; font-weight: bold; }
-    .container { display: flex; padding: 20px; gap: 20px; }
-    .articles { flex: 1; }
-    .article-preview { background: #fff; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 5px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-    .article-preview img { width: 100%; height: 150px; object-fit: cover; }
-    .article-preview .text { padding: 15px; }
-    .article-preview h3 { margin: 0; }
-    .standings { flex: 1; border-collapse: collapse; width: 100%; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-    .standings th, .standings td { border: 1px solid #ddd; padding: 8px; text-align: center; }
-    .standings th { background: #87cefa; }
+    body { margin:0; font-family:Arial,sans-serif; background:#f9fbfd; color:#000; }
+    header { background:#00274c; color:#fff; padding:20px; text-align:center; }
+    header h1 { margin:0; font-size:2rem; }
+    .content {
+      max-width:1000px;
+      margin:20px auto;
+      background:#fff;
+      padding:20px;
+      border-radius:6px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 { color:#00274c; margin-top:0; }
+    table { width:100%; border-collapse:collapse; margin:20px 0; }
+    th,td { padding:10px; border-bottom:1px solid #ccc; text-align:center; font-size:0.95rem; }
+    th { background:#00274c; color:#fff; }
+    tr:nth-child(even) { background:#f2f7fc; }
+    .ad { margin:30px 0; text-align:center; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Big 10 Football</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="b1g.html">B1G</a>
-    </nav>
+    <h1>Big Ten Standings</h1>
+    <p>Full Conference Breakdown</p>
   </header>
 
-  <div class="container">
-    <div class="articles">
-      <div class="article-preview">
-        <img src="https://via.placeholder.com/400x150" alt="Penn State vs Iowa">
-        <div class="text">
-          <h3><a href="1.html">Penn State vs Iowa - What You Need to Know</a></h3>
-          <p>Pregame hype and chances for PSU...</p>
-        </div>
-      </div>
-      <div class="article-preview">
-        <img src="https://via.placeholder.com/400x150" alt="Ohio State Report">
-        <div class="text">
-          <h3><a href="2.html">Ohio State Midseason Report</a></h3>
-          <p>Analysis of the Buckeyes’ midseason form...</p>
-        </div>
-      </div>
+  <div class="content">
+    <h2>Conference Standings (Detailed)</h2>
+    <table>
+      <tr>
+        <th>Team</th>
+        <th>Conference Record</th>
+        <th>Overall Record</th>
+        <th>Home</th>
+        <th>Away</th>
+        <th>Streak</th>
+        <th>Last Game</th>
+      </tr>
+      <tr><td>Indiana</td><td>3-0</td><td>6-0</td><td>4-0</td><td>2-0</td><td>W6</td><td>Win vs Maryland</td></tr>
+      <tr><td>Ohio State</td><td>3-0</td><td>6-0</td><td>4-0</td><td>2-0</td><td>W6</td><td>Win vs Rutgers</td></tr>
+      <tr><td>USC</td><td>3-1</td><td>5-1</td><td>4-0</td><td>1-1</td><td>W1</td><td>Win vs UCLA</td></tr>
+      <tr><td>Oregon</td><td>2-1</td><td>5-1</td><td>3-1</td><td>2-0</td><td>L1</td><td>Loss vs Washington</td></tr>
+      <tr><td>Michigan</td><td>2-1</td><td>4-2</td><td>3-0</td><td>1-2</td><td>L1</td><td>Loss vs Penn State</td></tr>
+      <tr><td>Northwestern</td><td>2-1</td><td>4-2</td><td>3-1</td><td>1-1</td><td>W3</td><td>Win vs Minnesota</td></tr>
+      <tr><td>Nebraska</td><td>2-1</td><td>5-1</td><td>3-1</td><td>1-0</td><td>W2</td><td>Win vs Purdue</td></tr>
+      <tr><td>Washington</td><td>2-1</td><td>5-1</td><td>3-1</td><td>2-0</td><td>W2</td><td>Win vs Oregon</td></tr>
+      <tr><td>Iowa</td><td>2-1</td><td>4-2</td><td>2-1</td><td>2-1</td><td>W1</td><td>Win vs Wisconsin</td></tr>
+      <tr><td>Minnesota</td><td>2-1</td><td>4-2</td><td>4-0</td><td>0-2</td><td>W1</td><td>Win vs Illinois</td></tr>
+      <tr><td>UCLA</td><td>2-1</td><td>2-4</td><td>1-2</td><td>1-2</td><td>W2</td><td>Win vs Rutgers</td></tr>
+      <tr><td>Illinois</td><td>2-2</td><td>5-2</td><td>3-1</td><td>2-1</td><td>L1</td><td>Loss vs Minnesota</td></tr>
+      <tr><td>Maryland</td><td>1-2</td><td>4-2</td><td>3-2</td><td>1-0</td><td>L2</td><td>Loss vs Indiana</td></tr>
+      <tr><td>Michigan State</td><td>0-3</td><td>3-3</td><td>3-1</td><td>0-2</td><td>L3</td><td>Loss vs Ohio State</td></tr>
+      <tr><td>Penn State</td><td>0-3</td><td>3-3</td><td>3-2</td><td>0-1</td><td>L3</td><td>Loss vs Michigan</td></tr>
+      <tr><td>Rutgers</td><td>0-3</td><td>3-3</td><td>3-1</td><td>0-2</td><td>L3</td><td>Loss vs USC</td></tr>
+      <tr><td>Purdue</td><td>0-3</td><td>2-4</td><td>2-2</td><td>0-2</td><td>L4</td><td>Loss vs Nebraska</td></tr>
+      <tr><td>Wisconsin</td><td>0-3</td><td>2-4</td><td>2-2</td><td>0-2</td><td>L4</td><td>Loss vs Iowa</td></tr>
+    </table>
+
+    <div class="ad">
+      <script type="text/javascript">
+        atOptions = { 'key' : 'adf45ada22d767c4fe17da98e6ba9185',
+                      'format' : 'iframe', 'height' : 600, 'width' : 160, 'params' : {} };
+      </script>
+      <script type="text/javascript" src="//www.highperformanceformat.com/adf45ada22d767c4fe17da98e6ba9185/invoke.js"></script>
     </div>
 
-    <table class="standings">
-      <tr><th>Team</th><th>Conf</th><th>Overall</th><th>Home</th><th>Away</th><th>Streak</th></tr>
-      <tr><td>Indiana</td><td>3-0</td><td>6-0</td><td>4-0</td><td>2-0</td><td>W6</td></tr>
-      <tr><td>Ohio State</td><td>3-0</td><td>6-0</td><td>4-0</td><td>2-0</td><td>W6</td></tr>
-      <tr><td>USC</td><td>3-1</td><td>5-1</td><td>4-0</td><td>1-1</td><td>W1</td></tr>
-      <!-- Add remaining teams here -->
-    </table>
+    <h2>Notes</h2>
+    <p>
+      This expanded table includes not only conference and overall records, but also home/away splits,
+      streaks, and the result of each team’s most recent game. Check back weekly for updates as the season progresses.
+    </p>
+  </div>
+
+  <div class="ad">
+    <script type="text/javascript">
+      atOptions = { 'key' : 'adf45ada22d767c4fe17da98e6ba9185',
+                    'format' : 'iframe', 'height' : 600, 'width' : 160, 'params' : {} };
+    </script>
+    <script type="text/javascript" src="//www.highperformanceformat.com/adf45ada22d767c4fe17da98e6ba9185/invoke.js"></script>
   </div>
 </body>
 </html>
